@@ -7,8 +7,6 @@ import (
 
 func RegisterRoutes(app *fiber.App) {
 	api := app.Group("/api")
-
-	v1 := api.Group("/v1")
-	systemV1 := v1.Group("/system")
-	systemV1.Get("/", system.GetSystemInformation)
+	systemAPI := api.Group("/system")
+	systemAPI.Get("/", system.GetSystemInformation)
 }
