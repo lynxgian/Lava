@@ -9,5 +9,5 @@ import (
 func main() {
 	app := fiber.New()
 	router.RegisterRoutes(app)
-	log.Fatal(app.Listen(":2221"))
+	log.Fatal(app.Listen("0.0.0.0:2221"))
 }
