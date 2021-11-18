@@ -1,5 +1,5 @@
 package lxd
 
 func ConvertId(id string) string {
-	return id[1:]
+	return id[3:]
 }
